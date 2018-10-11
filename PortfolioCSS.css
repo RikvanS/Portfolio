@@ -7,6 +7,9 @@ html {
 body {
     margin: 0;
     font-family: sans-serif;
+}
+/* hero header created a small horizontal scrollbar for main page that was unintended, this fixes it */
+.main-page {
     overflow-x: hidden;
 }
 
@@ -180,7 +183,12 @@ li {
     border-radius: 20px;
     float: right;
 }
-
+@media screen and (max-width: 1000px) {
+    .mainpagepicture {
+        min-width: 80px;
+        min-height: 80px;
+    }
+}
 section {
     padding: 2%;
 }
@@ -237,12 +245,21 @@ section {
        It does not work on all browsers */
     resize: vertical;
 }
+@media screen and (max-width: 1000px) {
+#contact-form input, textarea {
+    width: 100%;
+}
+}
 
 .button {   
     /* To position the buttons to the same position of the text fields */
     padding-left: 6em; /* same size as the label elements */
 }
-
+@media screen and (max-width: 1000px) {
+    .button {
+        padding-left: 0;
+    }
+}
 button {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
@@ -277,6 +294,11 @@ button {
 .calc-container {
     padding-top:15%;
 }
+@media screen and (max-width: 1000px) {
+.calc-container    {
+    padding-top:40%;
+}
+}
 
 #calc-content{
     position:relative;
@@ -288,6 +310,12 @@ button {
     padding:25px, 100px, 25px;
     background:silver;
 }
+@media screen and (max-width: 1000px) {
+#calc-content {
+    width: 80%;
+    height:50%;
+}
+}
 
 .calcbutton {
     background:lightgray;
@@ -298,6 +326,12 @@ button {
     margin-left:13px;
     margin-top:10px;
     margin-bottom: 7px;
+}
+
+@media screen and (max-width: 1000px) {
+.calcbutton    {
+    width: 15%;
+}
 }
 .calcbutton:hover {
     cursor: pointer;
@@ -322,6 +356,11 @@ button {
 .rockpaperscissorsgame {
     padding-top:10%;
 }
+@media screen and (max-width: 1000px) {
+.rockpaperscissorsgame    {
+    padding-top:20%;
+    }
+    }
 
 #game {
     text-align: center;
@@ -341,12 +380,20 @@ button {
 
 body.tempconverter {
     background-image: linear-gradient(to right, blue, red);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 
 #Kelvin, #Fahrenheit, #Celsius {
     text-align:center;
     font-size:2em;
     border-radius:10px;
+}
+@media screen and (max-width: 1000px) {
+#Kelvin, #Fahrenheit, #Celsius    {
+    font-size: 1em;
+}
 }
         
 #converter {
@@ -358,6 +405,13 @@ body.tempconverter {
     padding-top:10%;
     font-family: Verdana, Geneva, sans-serif;
 }
+@media screen and (max-width: 1000px) {
+#converter    {
+    padding-top:40%;
+    font-size: 1em;
+}
+}
+
 
 body.clockbody {
     background-color:black;
@@ -370,6 +424,13 @@ body.clockbody {
     color: #1D963F;
     margin: 20%;
     font-size: 5em;
+}
+@media screen and (max-width: 1000px) {
+.clock    {
+    margin:0;
+    padding-top: 50%;
+    font-size: 4em;
+}
 }
 
 body.unitconverterbody {
@@ -386,10 +447,25 @@ background-image: linear-gradient(to right, rgb(165, 165, 165), black);
     padding-bottom: 2em;
     color: white;
 }
+@media screen and (max-width: 1000px) {
+.unitconverter    {
+    padding-top: 40%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1em;
+    }
+    }
 
 #Inches, #Feet, #Yards, #Miles, #Centimeter, #Meter, #Kilometer {
     text-align:right;
     border-radius: 10px;
 }
+@media screen and (max-width: 1000px) {
+    #Inches, #Feet, #Yards, #Miles, #Centimeter, #Meter, #Kilometer    {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%; 
+    }
+    }
 
 
