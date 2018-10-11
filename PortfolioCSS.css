@@ -1,0 +1,395 @@
+/* Smooth scrolling enabled for entire page */
+html {
+    scroll-behavior:smooth 
+}
+
+/* centering the body */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white; 
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('Images/pexels-photo.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white; 
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid white; 
+    border-radius: 20px;
+}
+
+li {
+    display:inline;
+}
+
+.NavContainer {
+    position: fixed;
+    right:5%;
+    top:5%;
+}
+.RightNav {
+    text-align:right;
+    padding-right: 5%;
+}
+
+.linkbutton {
+    text-decoration: none;
+    color: black;
+    margin: 0.5em;
+}
+
+.linkbutton:hover {
+    text-decoration: underline;
+}
+
+.dropdownmenu {
+    position: relative;
+    display:inline-block;
+}
+.dropdownmenu a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown {
+    text-decoration: none;
+    color: white;
+    border: 2px solid black;
+    padding:20px;
+    background-color: rgb(4, 167, 167);
+    cursor: pointer;
+}
+    
+.dropdowncontent {
+    display:none;
+    position:absolute;
+    z-index: 1;
+    background-color: rgb(4, 167, 167);
+    text-align:center;
+    border:2px solid black;
+    padding:2px;
+    margin-top:20px;
+    
+}
+
+.dropdowncontent a {
+    display:block;
+    text-decoration: none;
+    color:white;
+    padding:2px;
+}
+
+.dropdowncontent a:hover {
+    text-decoration: underline;
+}
+
+.dropdownmenu:hover .dropdowncontent {
+    display:block;
+}
+
+.site-logo {
+    text-decoration: none;
+    color:white;
+    position: fixed;
+    left:5%;
+    top:5%;
+    border: 2px solid black;
+    padding:15px;
+    background-color: rgb(4, 167, 167);
+}
+
+.site-logo:hover {
+    text-decoration: underline;
+}
+
+#topbutton {
+    display: none;
+    position: fixed;
+    bottom:5%;
+    right:5%;
+    z-index: 99;
+    border:none;
+    outline:none;
+    background-color:teal;
+    color:white;
+    cursor: pointer;
+    padding:15px;
+    border-radius: 10px;
+    font-size:1em;
+}
+
+.contentmain {
+    padding-right: 20%;
+    padding-left:20%;
+}
+
+.header2 {
+    text-align: center;
+    padding-top:5%;
+    padding-bottom:5%;
+    
+}
+
+.mainpagepicture {
+    max-width: 10%;
+    max-height: 10%;
+    border-radius: 20px;
+    float: right;
+}
+
+section {
+    padding: 2%;
+}
+
+.header3 {
+    text-align: center;
+    color: rgb(4, 167, 167);
+}
+
+.final-par {
+    margin-bottom: 2%;
+}
+
+#contact-form {
+    margin: 0 auto;
+    width: 50%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color:rgb(4, 167, 167);
+}
+
+#contact-form div+div {
+    margin-top:0.5em;
+}
+
+#contact-form label {
+    display: inline-block;
+    width: 6em;
+    text-align: right;
+}
+
+#contact-form input, textarea {
+    font: 1em sans-serif;
+    width:70%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;  
+}
+
+#contact-form input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+
+#contact-form textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* To give enough room to type some text */
+    height: 5em;
+
+    /* To allow users to resize any textarea vertically
+       It does not work on all browsers */
+    resize: vertical;
+}
+
+.button {   
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 6em; /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+}
+
+.Linkimage {
+    max-height:32px;
+    max-width:32px;
+}
+
+.footerdiv {
+    text-align: center;
+}
+
+.footerdiv img {
+    max-height: 50px;
+    max-width: 50px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.footerdiv img:hover {
+    opacity: 0.8;
+    position: relative;
+    top: -5px;
+}
+
+.calc-body {
+    background-color:dimgray;
+}
+
+.calc-container {
+    padding-top:15%;
+}
+
+#calc-content{
+    position:relative;
+    width:25em;
+    height:100%;
+    border:5px solid black;
+    border-radius: 10px;
+    margin:0px auto;
+    padding:25px, 100px, 25px;
+    background:silver;
+}
+
+.calcbutton {
+    background:lightgray;
+    width:20%;
+    font-size:20px;
+    font-weight:900;
+    border-radius:10px;
+    margin-left:13px;
+    margin-top:10px;
+    margin-bottom: 7px;
+}
+.calcbutton:hover {
+    cursor: pointer;
+    background-color: #C4223A;
+    color:white;
+}
+
+.calcanswer {
+    position:relative;
+    display:block;
+    width:90%;
+    margin: 20px auto;
+    font-size:20px;
+    padding:10px;
+    text-align:right;
+}
+
+.rps-body {
+    background-image: linear-gradient(to right, rgb(77, 76, 76), white, silver);
+}
+
+.rockpaperscissorsgame {
+    padding-top:10%;
+}
+
+#game {
+    text-align: center;
+}
+
+.RPSscoreboard {
+    text-align: center;
+    padding-bottom: 10%;
+    font-size: 4em;
+    color: rgb(4, 167, 167);
+}
+
+.rpsbutton {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+body.tempconverter {
+    background-image: linear-gradient(to right, blue, red);
+}
+
+#Kelvin, #Fahrenheit, #Celsius {
+    text-align:center;
+    font-size:2em;
+    border-radius:10px;
+}
+        
+#converter {
+    font-size:2em;
+    text-align:center;
+    margin: 0 auto;
+    max-height: 50%;
+    max-width: 50%;
+    padding-top:10%;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+body.clockbody {
+    background-color:black;
+}
+
+.clock {
+    position:relative;
+    text-align:center;
+    font-family: 'Orbitron', sans-serif;
+    color: #1D963F;
+    margin: 20%;
+    font-size: 5em;
+}
+
+body.unitconverterbody {
+background-image: linear-gradient(to right, rgb(165, 165, 165), black);
+}
+
+.unitconverter {
+    font-size:2em;
+    text-align:center;
+    margin: 0 auto;
+    max-height: 30%;
+    max-width: 30%;
+    padding-top:10%;
+    padding-bottom: 2em;
+    color: white;
+}
+
+#Inches, #Feet, #Yards, #Miles, #Centimeter, #Meter, #Kilometer {
+    text-align:right;
+    border-radius: 10px;
+}
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Unit Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="PortfolioCSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+</head>
+
+<body class="unitconverterbody">
+    <header>
+        <div class="NavContainer">
+        <nav>
+        <ul class="RightNav">
+        <div class="dropdownmenu">
+        <li class="dropdown">Projects</li>
+        <div class="dropdowncontent">
+        <a href="tempconverter.html">Temperature Converter</a>
+        <a href="DigitalClock.html">Digital Clock</a>
+        <a href="Calculator.html">Calculator</a>
+        <a href="unitconverter.html">Unit Converter</a>
+        <a href="RockPaperScissors.html">Rock Paper Scissors</a>
+        </div>
+        </div>
+        </ul>
+        </nav>
+        </div>
+<a class="site-logo" href="portfolio.html">
+    <span class="logo">RvS</span>
+</a>
+    </header>
+        <div class="unitconverter">
+
+<label for="Inches"> Inches </label><br>
+<input type="text" id="Inches" value="0" onclick="this.select()" onkeyup="inchesfunc()">
+<br>
+
+<label for="Feet"> Feet </label><br>
+<input type="text" id="Feet" value="0" onclick="this.select()" onkeyup="feetfunc()"> <!-- Because of the CSS styling used for the calculator the converter is styled automatically too. While this will suffice for the sake of the exercise, on a live page I would want to seperate the CSS styling of such elements, as right now the styling for the unit converter isn't great. Rather than uniformly styling all input type=text I imagine we'd style per element. Perhaps a good exercise for the exercise page 2.0!   -->
+<br>
+
+<label for="yards"> Yards </label><br>
+<input type="text" id="Yards" value="0" onclick="this.select()" onkeyup="yardsfunc()">
+<br>
+
+<label for="Miles"> Miles </label><br>
+<input type="text" id="Miles" value="0" onclick="this.select()" onkeyup="milesfunc()">
+<br>
+
+<label for="Centimeter"> Centimeter </label><br>
+<input type="text" id="Centimeter" value="0" onclick="this.select()" onkeyup="centimeterfunc()">
+<br>
+
+<label for="Meter"> Meter </label><br>
+<input type="text" id="Meter" value="0" onclick="this.select()" onkeyup="meterfunc()">
+<br>
+
+<label for="Kilometer"> Kilometer </label> <br>
+<input type="text" id="Kilometer" value="0" onclick="this.select()" onkeyup="kilometerfunc()">
+<br>
+
+        </div>
+        <script src="unitconverter.js"></script>
+		</body>
+		</html>

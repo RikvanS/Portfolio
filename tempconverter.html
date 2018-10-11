@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Temperature Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="PortfolioCSS.css" />
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+</head>
+
+<body class="tempconverter">
+        
+        <div class="NavContainer">
+                <nav>
+                <ul class="RightNav">
+                <div class="dropdownmenu">
+                <li class="dropdown">Projects</li>
+                <div class="dropdowncontent">
+                <a href="tempconverter.html">Temperature Converter</a>
+                <a href="DigitalClock.html">Digital Clock</a>
+                <a href="Calculator.html">Calculator</a>
+                <a href="unitconverter.html">Unit Converter</a>
+                <a href="RockPaperScissors.html">Rock Paper Scissors</a>
+                </div>
+                </div>
+                </ul>
+                </nav>
+                </div>
+<a class="site-logo" href="portfolio.html">
+        <span class="logo">RvS</span>
+</a>
+
+        <div id="converter" class="tempconverter">
+                <label for="Kelvin">Kelvin</label>
+                <input type="text" id="Kelvin" value="0" onclick="this.select()" onkeyup="KelvinFunc()"> <br><br>
+                <label for="Fahrenheit">Fahrenheit</label>
+                <input type="text" id="Fahrenheit" value="0" onclick="this.select()" onkeyup="FahrenFunc()"> <br><br>
+                <label for="Celsius">Celsius</label>
+                <input type="text" id="Celsius" value="0" onclick="this.select()" onkeyup="CelsiusFunc()"> <br><br>
+        </div>
+        <script src="converterJS.js"></script>
+</body>
+</html>
